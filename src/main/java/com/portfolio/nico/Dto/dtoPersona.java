@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
  * @author Usuario
  */
 public class dtoPersona {
+
     @NotBlank
     private String nombre;
     @NotBlank
@@ -19,15 +20,18 @@ public class dtoPersona {
     @NotBlank
     private String descripcion;
     @NotBlank
+    private String sobremi;
+    @NotBlank
     private String img;
 
     public dtoPersona() {
     }
 
-    public dtoPersona(String nombre, String apellido, String descripcion, String img) {
+    public dtoPersona(String nombre, String apellido, String descripcion, String sobremi, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
+        this.sobremi = sobremi;
         this.img = img;
     }
 
@@ -55,6 +59,14 @@ public class dtoPersona {
         this.descripcion = descripcion;
     }
 
+    public String getSobremi() {
+        return sobremi;
+    }
+
+    public void setSobremi(String sobremi) {
+        this.sobremi = sobremi;
+    }
+
     public String getImg() {
         return img;
     }
@@ -62,6 +74,5 @@ public class dtoPersona {
     public void setImg(String img) {
         this.img = img;
     }
-    
-    
+
 }

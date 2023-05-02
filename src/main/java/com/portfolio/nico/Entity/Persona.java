@@ -12,27 +12,31 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String nombre;
-    
+
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String apellido;
-    
+
     @NotNull
     private String descripcion;
-    
+
+    @NotNull
+    private String sobremi;
+
     private String img;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public Persona(String nombre, String apellido, String descripcion, String sobremi, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
+        this.sobremi = sobremi;
         this.img = img;
     }
 
@@ -68,6 +72,14 @@ public class Persona {
         this.descripcion = descripcion;
     }
 
+    public String getSobremi() {
+        return sobremi;
+    }
+
+    public void setSobremi(String sobremi) {
+        this.sobremi = sobremi;
+    }
+
     public String getImg() {
         return img;
     }
@@ -76,9 +88,4 @@ public class Persona {
         this.img = img;
     }
 
-    
-    
-    
-    
-    
 }
