@@ -2,7 +2,8 @@ package com.portfolio.nico.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-public class dtoExperiencia {
+
+public class dtoProyecto {
     @NotBlank
     private String nombreE;
     @NotBlank
@@ -10,10 +11,10 @@ public class dtoExperiencia {
     
     //Constructores
 
-    public dtoExperiencia() {
+    public dtoProyecto() {
     }
 
-    public dtoExperiencia(String nombreE, String descripcionE) {
+    public dtoProyecto(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
