@@ -3,16 +3,16 @@ package com.portfolio.nico.Dto;
 import javax.validation.constraints.NotBlank;
 
 
-public class dtoHys {
+public class dtoHys3 {
     @NotBlank
     private String nombre;
     @NotBlank
     private int porcentaje;
 
-    public dtoHys() {
+    public dtoHys3() {
     }
 
-    public dtoHys(String nombre, int porcentaje) {
+    public dtoHys3(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
