@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.nico.Entity;
 
 import javax.persistence.Entity;
@@ -12,24 +7,29 @@ import javax.persistence.Id;
 
 @Entity
 public class Experiencia {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
+    private String iniciO;
+    private String fiN;
+    private String marcA;
     private String descripcionE;
-    
-    //Constructores
 
+    //Constructores
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE) {
+    public Experiencia(String nombreE, String iniciO, String fiN, String marcA, String descripcionE) {
         this.nombreE = nombreE;
+        this.iniciO = iniciO;
+        this.fiN = fiN;
+        this.marcA = marcA;
         this.descripcionE = descripcionE;
     }
-    
-    //Getters and setters
 
+    //Getters and setters
     public int getId() {
         return id;
     }
@@ -46,6 +46,30 @@ public class Experiencia {
         this.nombreE = nombreE;
     }
 
+    public String getIniciO() {
+        return iniciO;
+    }
+
+    public void setIniciO(String iniciO) {
+        this.iniciO = iniciO;
+    }
+    
+    public String getFiN() {
+        return fiN;
+    }
+
+    public void setFiN(String fiN) {
+        this.fiN = fiN;
+    }
+    
+    public String getMarcA() {
+        return marcA;
+    }
+
+    public void setMarcA(String marcA) {
+        this.marcA = marcA;
+    }
+
     public String getDescripcionE() {
         return descripcionE;
     }
@@ -53,5 +77,5 @@ public class Experiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
+
 }

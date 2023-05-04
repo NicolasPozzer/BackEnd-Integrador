@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.nico.Dto;
 
 import javax.validation.constraints.NotBlank;
@@ -10,14 +5,22 @@ import javax.validation.constraints.NotBlank;
 public class dtoEducacion {
     @NotBlank
     private String nombreE;
+    private String iniciO;
+    @NotBlank
+    private String fiN;
+    @NotBlank
+    private String marcA;
     @NotBlank
     private String descripcionE;
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String iniciO, String fiN, String marcA, String descripcionE) {
         this.nombreE = nombreE;
+        this.iniciO = iniciO;
+        this.fiN = fiN;
+        this.marcA = marcA;
         this.descripcionE = descripcionE;
     }
 
@@ -27,6 +30,30 @@ public class dtoEducacion {
 
     public void setNombreE(String nombreE) {
         this.nombreE = nombreE;
+    }
+    
+    public String getIniciO() {
+        return iniciO;
+    }
+
+    public void setIniciO(String iniciO) {
+        this.iniciO = iniciO;
+    }
+    
+    public String getFiN() {
+        return fiN;
+    }
+
+    public void setFiN(String fiN) {
+        this.fiN = fiN;
+    }
+    
+    public String getMarcA() {
+        return marcA;
+    }
+
+    public void setMarcA(String marcA) {
+        this.marcA = marcA;
     }
 
     public String getDescripcionE() {

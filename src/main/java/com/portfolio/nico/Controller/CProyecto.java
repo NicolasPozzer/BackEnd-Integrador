@@ -60,7 +60,7 @@ public class CProyecto {
             return new ResponseEntity(new Mensaje("Ese proyecto existe"), HttpStatus.BAD_REQUEST);
         }
 
-        Proyecto proyecto = new Proyecto(dtopro.getNombreE(), dtopro.getDescripcionE());
+        Proyecto proyecto = new Proyecto(dtopro.getNombreE(), dtopro.getDescripcionE(), dtopro.getUrldemO());
         sProyecto.save(proyecto);
 
         return new ResponseEntity(new Mensaje("Proyecto agregado"), HttpStatus.OK);
@@ -84,6 +84,7 @@ public class CProyecto {
         Proyecto proyecto = sProyecto.getOne(id).get();
         proyecto.setNombreE(dtopro.getNombreE());
         proyecto.setDescripcionE((dtopro.getDescripcionE()));
+        proyecto.setUrldemO((dtopro.getUrldemO()));
 
         sProyecto.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);

@@ -8,15 +8,19 @@ public class dtoProyecto {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
+    private String urldemO;
     
     //Constructores
 
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombreE, String descripcionE) {
+    public dtoProyecto(String nombreE, String descripcionE, String urldemO) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.urldemO = urldemO;
+        
     }
     //Getters & Setters
 
@@ -34,6 +38,14 @@ public class dtoProyecto {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+    
+    public String getUrldemO() {
+        return urldemO;
+    }
+
+    public void setUrldemO(String urldemO) {
+        this.urldemO = urldemO;
     }
     
 }

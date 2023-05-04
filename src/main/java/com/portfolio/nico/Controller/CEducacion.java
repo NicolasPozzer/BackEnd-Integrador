@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.nico.Controller;
 
 import com.portfolio.nico.Dto.dtoEducacion;
@@ -65,7 +60,7 @@ public class CEducacion {
         }
         
         Educacion educacion = new Educacion(
-                dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
+                dtoeducacion.getNombreE(), dtoeducacion.getIniciO(), dtoeducacion.getFiN(), dtoeducacion.getMarcA(),  dtoeducacion.getDescripcionE()
             );
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
@@ -87,6 +82,9 @@ public class CEducacion {
         Educacion educacion = sEducacion.getOne(id).get();
         
         educacion.setNombreE(dtoeducacion.getNombreE());
+        educacion.setIniciO(dtoeducacion.getIniciO());
+        educacion.setFiN(dtoeducacion.getFiN());
+        educacion.setMarcA(dtoeducacion.getMarcA());
         educacion.setDescripcionE(dtoeducacion.getDescripcionE());
         
         sEducacion.save(educacion);

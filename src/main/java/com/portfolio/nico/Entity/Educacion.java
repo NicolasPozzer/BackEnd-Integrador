@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.nico.Entity;
 
 import javax.persistence.Entity;
@@ -16,13 +11,19 @@ public class Educacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
+    private String iniciO;
+    private String fiN;
+    private String marcA;
     private String descripcionE;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String iniciO, String fiN, String marcA, String descripcionE) {
         this.nombreE = nombreE;
+        this.iniciO = iniciO;
+        this.fiN = fiN;
+        this.marcA = marcA;
         this.descripcionE = descripcionE;
     }
 
@@ -40,6 +41,30 @@ public class Educacion {
 
     public void setNombreE(String nombreE) {
         this.nombreE = nombreE;
+    }
+    
+    public String getIniciO() {
+        return iniciO;
+    }
+
+    public void setIniciO(String iniciO) {
+        this.iniciO = iniciO;
+    }
+    
+    public String getFiN() {
+        return fiN;
+    }
+
+    public void setFiN(String fiN) {
+        this.fiN = fiN;
+    }
+    
+    public String getMarcA() {
+        return marcA;
+    }
+
+    public void setMarcA(String marcA) {
+        this.marcA = marcA;
     }
 
     public String getDescripcionE() {
