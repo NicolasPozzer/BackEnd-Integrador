@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = {"https://backend-nico.onrender.com","http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200","https://backend-nico.onrender.com"})
 @RequestMapping("/skill2")
 public class CHys2 {
 
