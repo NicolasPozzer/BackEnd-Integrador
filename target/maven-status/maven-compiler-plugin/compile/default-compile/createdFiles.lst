@@ -22,6 +22,7 @@ com\portfolio\nico\Controller\CHys3.class
 com\portfolio\nico\Service\SExperiencia.class
 com\portfolio\nico\Repository\RProyecto.class
 com\portfolio\nico\Entity\hys2.class
+com\portfolio\nico\WebConfig.class
 com\portfolio\nico\Security\Entity\UsuarioPrincipal.class
 com\portfolio\nico\Service\SProyecto.class
 com\portfolio\nico\Dto\dtoHys3.class
