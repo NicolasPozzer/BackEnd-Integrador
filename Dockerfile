@@ -1,4 +1,4 @@
-FROM adoptopenjdk:17-jdk-hotspot
+FROM adoptopenjdk:17-jdk
 MAINTAINER NICO
 EXPOSE 8080
 COPY target/nico-0.0.1-SNAPSHOT.jar  nico-app.jar
