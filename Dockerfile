@@ -1,5 +1,3 @@
-# Usar una imagen base con JDK 11 y Maven
-FROM maven:3.8.1-openjdk-17 AS build
 
 # Ejecutar Maven para construir el proyecto
 RUN mvn clean package
@@ -15,5 +13,5 @@ COPY --from=build target/nico-0.0.1-SNAPSHOT.jar  nico-app.jar
 ENTRYPOINT ["java","-jar","/nico-app.jar"]
 
 
-COPY target/nico-0.0.1-SNAPSHOT.jar  nico-app.jar
-ENTRYPOINT ["java","-jar","/nico-app.jar"]
+#COPY target/nico-0.0.1-SNAPSHOT.jar  nico-app.jar
+#ENTRYPOINT ["java","-jar","/nico-app.jar"]
