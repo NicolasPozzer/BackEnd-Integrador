@@ -15,7 +15,6 @@ com\portfolio\nico\Security\jwt\JwtProvider.class
 com\portfolio\nico\Security\Service\UsuarioService.class
 com\portfolio\nico\Service\Seducacion.class
 com\portfolio\nico\Controller\PersonaController.class
-com\portfolio\nico\tools\TareaProgramada.class
 com\portfolio\nico\Security\Repository\iRolRepository.class
 com\portfolio\nico\Security\Entity\Usuario.class
 com\portfolio\nico\Repository\REducacion.class
