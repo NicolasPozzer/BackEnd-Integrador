@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM amazoncorretto:17
 MAINTAINER NICO
 EXPOSE 8080
 COPY target/nico-0.0.1-SNAPSHOT.jar  nico-app.jar
